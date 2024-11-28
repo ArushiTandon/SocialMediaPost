@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefcfc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#postForm {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#postForm h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+#postForm label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#postForm input,
+#postForm textarea {
+    width: 100%;
+    height: 40px;
+    /* padding: 10px; */
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Arial', sans-serif;
+}
+
+#postForm button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#postForm button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#postList {
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+
+.list-group-item {
+    background-color: #00070c;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-group-item img {
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.list-group-item p {
+    font-size: 0.95rem;
+    color: #fdfafa;
+    margin-bottom: 10px;
+}
+
+.cmntBox {
+    width: 100%;
+    height: 60px;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.commentBtn {
+    align-self: flex-end;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.commentBtn:hover {
+    background-color: #0056b3;
+}
+
+.comments {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.comment {
+    font-size: 0.85rem;
+    color: #000000  !important;
+    background-color: #f6f2f2;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+    <label for="postForm">Create a Post</label>
+    <form id="postForm" onsubmit="uploadPost(event)">
+
+        <div>
+            <input type="hidden" id="id" name="id" class="form-control" />
+          </div>
+
+        <div>
+            <label for="link" class="form-label">Post Link:</label>
+            <input type="url" id="link" name="link" class="form-control" placeholder="Enter image link" required/>
+        </div>
+
+        <div>
+            <label for="description" class="form-label">Description:</label>
+            <input type="text" id="description" name="description" placeholder="Enter description" class="form-control">
+        </div>
+
+        <button type="submit" id="button" class="button">Create Post</button>
+    </form>
+
+    <div>
+        <ul id="postList" class="list-group">Posts</ul>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
