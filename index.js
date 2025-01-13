@@ -9,8 +9,6 @@ async function uploadPost(event) {
     const post = { image, description, comments: [] };
 
     try {
-        console.log("POST UPLOADED");
-        console.log(apiUrl);
         await axios.post(apiUrl, post); 
         
     } catch (error) {

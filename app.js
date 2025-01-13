@@ -23,9 +23,7 @@ app.use((req, res) => {
     res.status(404).send('Route not found');
 });
 
-
-// Sync database and start server
-sequelize.sync({ force: false }) // Change to true to drop tables and recreate them
+sequelize.sync({ force: false }) 
     .then(() => {
         console.log('Database synced');
         app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));

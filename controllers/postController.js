@@ -3,7 +3,7 @@ const Post = require('../models/post');
 // Fetch all posts
 exports.getPosts = async (req, res) => {
     try {
-        const posts = await Post.findAll(); // Sequelize handles this
+        const posts = await Post.findAll();
         res.status(200).json(posts);
     } catch (error) {
         console.error('Error fetching posts:', error);

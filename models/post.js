@@ -15,11 +15,11 @@ const Post = sequelize.define('Post', {
         type: DataTypes.STRING,
     },
     comments: {
-        type: DataTypes.JSON, // Storing comments as an array of strings
+        type: DataTypes.JSON,
         defaultValue: [],
     },
 }, {
-    timestamps: true, // Adds createdAt and updatedAt columns
+    timestamps: true, 
 });
 
 module.exports = Post;
